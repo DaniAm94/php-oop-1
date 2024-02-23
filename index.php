@@ -34,7 +34,7 @@ var_dump($chris_columbus);
  function addCastMember($actor){
     $this->cast[]= $actor;
  }
- function setDirector($director){
+ function setDirector(object $director){
     $this->director= $director;
  }
 
@@ -45,14 +45,14 @@ $harry_potter = new Movie('Harry Potter and the philosopher\'s stone', $plot, 'e
 $harry_potter->addCastMember('Daniel Radcliffe');
 $harry_potter->addCastMember('Rupert Grint');
 $harry_potter->addCastMember('Emma Watson');
-$harry_potter->setDirector('David Yates');
+$harry_potter->setDirector($chris_columbus);
 var_dump($harry_potter);
 
 $harry_potter_2= new Movie('Harry Potter and the chamber of secrets', $plot, 'english');
 $harry_potter_2->addCastMember('Tom Felton');
 $harry_potter_2->addCastMember('Matthew Lewis');
 $harry_potter_2->addCastMember('Bonnie Wright');
-$harry_potter_2->setDirector('David Yates');
+$harry_potter_2->setDirector($chris_columbus);
 var_dump($harry_potter_2);
 
 ?>
