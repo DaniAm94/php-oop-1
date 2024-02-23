@@ -17,7 +17,6 @@ class Director{
 }
 
 $chris_columbus= new Director('Chris', 'Columbus', 68,'Tutto quella notte', 'Qualcuno salvi il natale 2' );
-var_dump($chris_columbus);
 
 class Actor{
    public $first_name;
@@ -68,9 +67,9 @@ $harry_potter->setDirector($chris_columbus);
 var_dump($harry_potter);
 
 $harry_potter_2= new Movie('Harry Potter and the chamber of secrets', $plot, 'english');
-$harry_potter->addCastMember($daniel_radcliffe);
-$harry_potter->addCastMember($ruper_grint);
-$harry_potter->addCastMember($emma_watson);
+$harry_potter_2->addCastMember($daniel_radcliffe);
+$harry_potter_2->addCastMember($ruper_grint);
+$harry_potter_2->addCastMember($emma_watson);
 $harry_potter_2->setDirector($chris_columbus);
 var_dump($harry_potter_2);
 
